@@ -1,69 +1,28 @@
-# Laravel + Blade Starter Kit
+# Projeto CRUD de Produtos em Laravel
 
----
+Este projeto é um CRUD (Create, Read, Update, Delete) simples de produtos, desenvolvido como trabalho final da disciplina de Introdução a Laravel.
 
-## Introduction
+## [cite_start]Funcionalidades Implementadas
 
-Our Laravel 12 + Blade starter kit provides the typical functionality found in the Laravel Starter kits, but with a few key differences:
+* Autenticação de usuários (o CRUD é protegido).
+* CRUD completo para Produtos (Listar, Criar, Ver, Editar, Apagar).
+* Uso de Rotas Resource.
+* Validação no servidor com feedback claro para o usuário.
+* Mensagens de sessão (flash) para feedback de ações.
+* Telas responsivas utilizando Bootstrap (fornecido pelo starter kit).
 
-- A CoreUI/AdminLTE inspired design layout
-- Blade + AlpineJS code
+## [cite_start]Como Instalar e Rodar
 
-This kit aims to fill the gap where there is no simple **Blade only** starter kit available.
+1.  Clone este repositório: `git clone https://github.com/Victortramontine/crud-produtos.git`
+2.  Acesse a pasta do projeto: `cd crud-produtos`
+3.  Instale as dependências: `composer install`
+4.  Copie o arquivo de ambiente: `cp .env.example .env`
+5.  Gere a chave da aplicação: `php artisan key:generate`
+6.  Configure o arquivo `.env` com seu banco de dados (o projeto foi feito com SQLite, basta criar o arquivo `database/database.sqlite`).
+7.  Execute as migrações: `php artisan migrate`
+8.  Inicie o servidor: `php artisan serve`
+9.  Acesse `http://127.0.0.1:8000` no seu navegador.
 
-Our internal goal at Laravel Daily is to start using this starter kit for our Demo applications, to avoid overwhelming our audience with Vue/Livewire/React if we had used one of the official Laravel 12 starter kits.
+## [cite_start]Usuário de Teste
 
-**Note:** This is Work in Progress kit, so it will get updates and fixes/features as we go.
-
----
-
-## Screenshots
-
-![](https://laraveldaily.com/uploads/2025/05/LoginPage.png)
-
-![](https://laraveldaily.com/uploads/2025/05/RegisterPage.png)
-
-![](https://laraveldaily.com/uploads/2025/05/DashboardPage.png)
-
-![](https://laraveldaily.com/uploads/2025/05/ProfilePage.png)
-
----
-
-## What is Inside?
-
-Inside you will find all the functions that you would expect:
-
-- Authentication
-    - Login
-    - Registration
-    - Password Reset Flow
-    - Email Confirmation Flow
-- Dashboard Page
-- Profile Settings
-    - Profile Information Page
-    - Password Update Page
-    - Appearance Preferences
-
----
-
-## How to use it?
-
-To use this kit, you can install it using:
-
-```bash
-laravel new --using=laraveldaily/starter-kit
-```
-
-From there, you can modify the kit to your needs.
-
----
-
-## Design Elements
-
-If you want to see examples of what design elements we have, you can [visit the Wiki](<https://github.com/LaravelDaily/starter-kit/wiki/Design-Examples-(Raw-Files)>) and see the raw HTML files.
-
----
-
-## Licence
-
-Starter kit is open-sourced software licensed under the MIT license.
+Para testar, você pode se registrar com qualquer e-mail/senha na página de registro da aplicação.
