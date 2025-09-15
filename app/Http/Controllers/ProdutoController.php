@@ -24,6 +24,11 @@ class ProdutoController extends Controller
 
     return view('produtos.index', compact('produtos', 'request'));
 }
+    
+    public function edit(Produto $produto)
+    {
+        return view('produtos.edit', compact('produto'));
+    }
 
     public function update(Request $request, Produto $produto)
     {
@@ -37,7 +42,7 @@ class ProdutoController extends Controller
         $produto->update($request->all());
 
         return redirect()->route('produtos.index')
-                         ->with('success', 'Produto atualizado com sucesso.');
+                     ->with('success', 'Produto atualizado com sucesso.');
     }
 
     public function destroy(Produto $produto)
@@ -46,5 +51,10 @@ class ProdutoController extends Controller
 
         return redirect()->route('produtos.index')
                          ->with('success', 'Produto apagado com sucesso.');
+    }
+
+    public function show(Produto $produto)
+    {
+        return view('produtos.show', compact('produto'));
     }
 }
