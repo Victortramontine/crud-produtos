@@ -2,7 +2,7 @@
 
 Este projeto é um CRUD (Create, Read, Update, Delete) simples de produtos, desenvolvido como trabalho final da disciplina de Introdução a Laravel.
 
-## [cite_start]Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 * Autenticação de usuários (o CRUD é protegido).
 * CRUD completo para Produtos (Listar, Criar, Ver, Editar, Apagar).
@@ -11,7 +11,7 @@ Este projeto é um CRUD (Create, Read, Update, Delete) simples de produtos, dese
 * Mensagens de sessão (flash) para feedback de ações.
 * Telas responsivas utilizando Bootstrap (fornecido pelo starter kit).
 
-## [cite_start]Como Instalar e Rodar
+## Como Instalar e Rodar
 
 1.  Clone este repositório: `git clone https://github.com/Victortramontine/crud-produtos.git`
 2.  Acesse a pasta do projeto: `cd crud-produtos`
@@ -23,6 +23,6 @@ Este projeto é um CRUD (Create, Read, Update, Delete) simples de produtos, dese
 8.  Inicie o servidor: `php artisan serve`
 9.  Acesse `http://127.0.0.1:8000` no seu navegador.
 
-## [cite_start]Usuário de Teste
+## Usuário de Teste
 
 Para testar, você pode se registrar com qualquer e-mail/senha na página de registro da aplicação.
