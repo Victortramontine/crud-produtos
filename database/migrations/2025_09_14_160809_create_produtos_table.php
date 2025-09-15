@@ -11,11 +11,11 @@ return new class extends Migration
     {
         Schema::create('produtos', function (Blueprint $table) {
             $table->id();
-            $table->string('nome'); // Campo string
-            $table->text('descricao'); // Campo text
-            $table->decimal('preco', 8, 2); // Campo numérico
-            $table->date('data_validade'); // Campo data
-            $table->boolean('ativo')->default(true); // Campo boolean
+            $table->string('nome'); 
+            $table->text('descricao'); 
+            $table->decimal('preco', 8, 2); 
+            $table->date('data_validade'); 
+            $table->boolean('ativo')->default(true); 
             $table->timestamps();
         });
     }

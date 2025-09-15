@@ -12,7 +12,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Agrupa as rotas do CRUD de produtos para exigir autenticação
 Route::middleware('auth')->group(function () {
     Route::resource('produtos', ProdutoController::class);
 });
