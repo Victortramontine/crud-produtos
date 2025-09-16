@@ -57,4 +57,24 @@ class ProdutoController extends Controller
     {
         return view('produtos.show', compact('produto'));
     }
+
+    public function create()
+    {
+        return view('produtos.create');
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'descricao' => 'required|string',
+            'preco' => 'required|numeric|min:0',
+            'data_validade' => 'required|date',
+        ]);
+
+        Produto::create($request->all());
+
+         return redirect()->route('produtos.index')
+                     ->with('success', 'Produto criado com sucesso.');
+}
 }
